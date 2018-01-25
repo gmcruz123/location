@@ -1,0 +1,51 @@
+page-login {
+    
+    .login-bg{
+        background-image: url("https://acatimes.com/wp-content/uploads/aAdobeStock_66020892.jpeg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .login-title{
+        font-family:'Jockey One', sans-serif;
+        font-size: 3em;
+        align-content: center;
+        text-align: center;
+        
+       
+    }
+
+    .login-main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-content: center;
+    }
+
+    .login-inputs{
+
+        flex:1;
+        display: flex;
+        flex-direction: column;
+         padding-top: 50px;
+         border-color: blue;
+
+    }
+
+    .text-input-wp{
+        border-color:transparent;
+        
+    }
+
+    .boton{
+        background-color:transparent;
+        margin-top: 200px;
+        size: 40em;
+        border-bottom-color: transparent;
+
+    }
+
+
+}

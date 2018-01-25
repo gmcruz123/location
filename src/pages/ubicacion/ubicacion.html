@@ -1,0 +1,30 @@
+<!--
+  Generated template for the UbicacionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <agm-map [zoom]=16 [latitude]="lat" [longitude]="lng">
+
+    <agm-polyline [strokeWeight]="6" [strokeColor]="color" [strokeOpacity]="0.8">
+      <div *ngFor="let m of rutas">
+        <agm-polyline-point [latitude]="m.lat()" [longitude]="m.lng()">
+        </agm-polyline-point>
+
+      </div>
+    </agm-polyline>
+
+    <agm-circle [fillColor] = "color" [fillOpacity] = 0.2  [latitude]="lat" [longitude]="lng" [radius] = 200  >
+      <agm-marker [iconUrl]="iconPerson" [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-circle>
+      <agm-marker [iconUrl]="iconDoc" [latitude]="latPa" [longitude]="lngPa"></agm-marker>
+    
+    </agm-map>
+</ion-content>
